@@ -10,9 +10,9 @@ mod tests {
     #[test]
     fn test_generator() {
         let mut generator = || {
-            println!("2");
-            yield;
-            println!("4");
+            println!("generator_2");
+            yield "ss";
+            println!("generator_4");
         };
 
         println!("1");
